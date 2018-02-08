@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.accenture.firstproject</groupId>
+	<artifactId>FirstProject</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>FirstProject</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>2.53.1</version>
+		</dependency>
+	</dependencies>
+	<!-- <distributionManagement>
+		<repository>
+			<id>FirstProject</id>
+			<name>FirstProject</name>
+			<url>http://localhost:8081/artifactory</url>
+		</repository>
+	</distributionManagement> -->
+
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>CDC2-L-5465S4K-releases</name>
+        <url>http://localhost:8081/artifactory/ExampleProject</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>CDC2-L-5465S4K-snapshots</name>
+        <url>http://localhost:8081/artifactory/ExampleProject</url>
+    </snapshotRepository>
+</distributionManagement>
+</project>
